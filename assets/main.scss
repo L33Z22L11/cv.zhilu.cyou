@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color-scheme: light dark;
+
+    &.dark {
+        background-color: #222;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: currentcolor;
+}
+
+p, li {
+    opacity: 0.9;
+}
+
+code, pre {
+    font-family: "Cascadia Code", "Noto Sans Mono", Consolas, monospace;
+}
+
+menu, ol, ul {
+    padding-inline-start: 1em;
+}
+
+li {
+    margin: 0.2em 0;
+
+    &::marker {
+        opacity: 0.2;
+    }
+}
+
+button {
+    cursor: pointer;
+
+    .iconify:only-child {
+        display: block;
+    }
+}
+
+button, input, textarea {
+    background: none;
+    font: inherit;
+    color: currentcolor;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+// Iconify 图标复用了此类
+:where(.iconify) {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 1.2em;
+    vertical-align: text-bottom;
+}
+
