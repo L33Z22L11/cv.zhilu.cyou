@@ -10,6 +10,7 @@
 
 :root {
     font: 0.875em / 1.5 system-ui, sans-serif;
+    letter-spacing: 0.02em;
     color-scheme: light dark;
 
     &.dark {
@@ -35,7 +36,9 @@ menu, ol, ul {
 }
 
 li {
-    margin: 0.2em 0;
+    & + li {
+        margin-top: 0.2em;
+    }
 
     &::marker {
         opacity: 0.2;

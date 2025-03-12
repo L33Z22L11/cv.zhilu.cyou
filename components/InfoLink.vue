@@ -7,7 +7,7 @@ defineProps<{
 <template>
     <NuxtLink
         :to
-        un-text="blue-600 dark:blue-300 hover:op-80"
+        un-text="blue-600 @dark:blue-300 hover:op-80"
         :target="isExtLink(to) ? '_blank' : undefined"
     >
         <slot>{{ trimLink(to) }}</slot>

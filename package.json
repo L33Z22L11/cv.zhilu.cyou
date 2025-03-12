@@ -11,14 +11,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/icon": "1.10.3",
-    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxt/icon": "1.11.0",
     "nuxt": "^3.16.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.8.1",
+    "@antfu/eslint-config": "^4.10.0",
     "@iconify-json/logos": "^1.2.4",
     "@iconify-json/ri": "^1.2.5",
     "@unocss/nuxt": "^66.0.0",

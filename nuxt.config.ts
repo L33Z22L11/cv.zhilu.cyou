@@ -32,13 +32,6 @@ export default defineNuxtConfig({
 
     modules: [
         '@unocss/nuxt',
-        '@nuxtjs/color-mode',
         '@nuxt/icon',
     ],
-
-    colorMode: {
-        preference: 'system',
-        fallback: 'light',
-        classSuffix: '',
-    },
 })
