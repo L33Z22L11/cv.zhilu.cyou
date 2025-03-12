@@ -1,29 +1,34 @@
+<script setup lang="ts">
+const { name, phone } = useRuntimeConfig().public
+</script>
+
 <template>
     <article max-w="172" mx="auto" p="4">
         <h1 text="center" m="be-2">
-            刘
+            {{ name || '刘' }}
         </h1>
 
         <ul columns="sm:2" p="is-0">
             <InfoLi icon="ri:smartphone-line" label="电话">
-                133****9192(同微信)
+                {{ phone || '133****9192 (同微信)' }}
             </InfoLi>
+
             <InfoLi icon="ri:mail-line" label="邮箱">
-                <InfoLink to="mailto:hi@zhilu.cyou">
-                    hi@zhilu.cyou
-                </InfoLink>
+                <InfoLink to="mailto:hi@zhilu.cyou" />
             </InfoLi>
+
             <InfoLi icon="ri:github-fill" label="GitHub">
-                <InfoLink to="https://github.com/L33Z22L11">
-                    github.com/L33Z22L11
-                </InfoLink>
+                <InfoLink to="https://github.com/L33Z22L11" />
             </InfoLi>
+
             <InfoLi icon="ri:men-line" label="性别">
                 男
             </InfoLi>
+
             <InfoLi icon="ri:school-line" label="学校">
                 西安邮电大学 (计算机科学与技术)
             </InfoLi>
+
             <InfoLi icon="ri:graduation-cap-line" label="学历">
                 本科在读 (2026届)
             </InfoLi>
@@ -32,11 +37,11 @@
         <InfoSection title="个人技能">
             <ul>
                 <li>掌握Vue 3、Nuxt 3、TypeScript等现代前端技术栈</li>
-                <li>精通响应式设计，注重UI、UX体验，掌握Sass CSS预处理器、UnoCSS等原子框架</li>
-                <li>注重代码规范与兼容性，熟练阅读官方文档、Issue以解决问题，擅长撰写技术文档</li>
-                <li>熟悉Vercel、Netlify等Serverless平台，对新技术有强烈兴趣并持续学习</li>
-                <li>熟练使用Git，注重代码/提交记录/开源参与规范，活跃于GitHub开源社区</li>
+                <li>精通响应式设计，注重UI/UX，掌握Sass CSS预处理器、UnoCSS等原子框架</li>
                 <li>熟练使用Linux系统，具有Linux运维能力，掌握计算机网络、操作系统知识</li>
+                <li>熟练使用Git，注重代码/提交记录/开源参与规范，活跃于GitHub开源社区</li>
+                <li>熟悉Vercel、Netlify等Serverless平台，对新技术有强烈兴趣并持续学习</li>
+                <li>注重代码规范、开发体验与兼容性，熟练通过文档、Issue解决问题，擅长撰写文档</li>
             </ul>
         </InfoSection>
 
@@ -46,7 +51,7 @@
                 desc="个人博客"
                 link="https://blog.zhilu.cyou"
                 from="2024.08"
-                :techs="['Nuxt', 'Vue 3', 'TypeScript', 'Pinia', 'VueUse', 'Scss', 'Iconify', 'ESLint', 'Stylelint']"
+                :techs="['Nuxt', 'Vue 3', 'TypeScript', 'Pinia', 'Scss', 'Iconify', 'ESLint', 'Stylelint']"
             >
                 <ul>
                     <li>注重响应式设计，界面美观且交互友好</li>
@@ -60,8 +65,7 @@
                 name="GioPic"
                 desc="图床上传桌面程序"
                 link="https://github.com/isYangs/GioPic"
-                from="2024.06"
-                to="2024.07"
+                from="2024.08"
                 :techs="['Electron', 'Vite', 'Vue 3', 'TypeScript', 'Pinia', 'SQLite', 'Axios', 'UnoCSS', 'NaiveUI']"
             >
                 <ul>
@@ -75,10 +79,10 @@
             <Project
                 name="XiyouLinux"
                 desc="实验室服务聚合"
-                link="https://xiyoulinux.com"
+                link="https://www.xiyoulinux.com"
                 from="2024.03"
                 to="至今"
-                :techs="['VitePress', 'Nitro', 'Vue 3', 'TypeScript', 'MongoDB']"
+                :techs="['VitePress', 'Nitro', 'Vue 3', 'TypeScript', 'VueUse', 'MongoDB', 'Prettier']"
             >
                 <ul>
                     <li>门户页面通过VitePress构建前后端分离的站点，性能需求低，易于实验室成员维护</li>

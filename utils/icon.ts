@@ -11,6 +11,7 @@ const techMap = {
     'Node.js': 'logos:nodejs-icon',
     'Nuxt': 'vscode-icons:file-type-nuxt',
     'Pinia': 'logos:pinia',
+    'Prettier': 'logos:prettier',
     'Sass': 'logos:sass',
     'Scss': 'vscode-icons:file-type-scss',
     'SQLite': 'vscode-icons:file-type-sqlite',
@@ -20,10 +21,11 @@ const techMap = {
     'UnoCSS': 'logos:unocss',
     'Vite': 'logos:vitejs',
     'VitePress': 'simple-icons:vitepress',
+    'Vitest': 'logos:vitest',
     'Vue 3': 'logos:vue',
     'VueUse': 'logos:vueuse',
 }
 
 export type Tech = keyof typeof techMap
 
-export const getTechIcon = (tech: Tech) => techMap[tech]
+export const getTechIcon = (tech: Tech) => techMap[tech] || 'ri:code-line'
