@@ -15,6 +15,14 @@ export default defineNuxtConfig({
 
     compatibilityDate: '2025-03-11',
 
+    devtools: {
+        enabled: false,
+    },
+
+    features: {
+        inlineStyles: false,
+    },
+
     future: {
         compatibilityVersion: 4,
     },
@@ -34,4 +42,8 @@ export default defineNuxtConfig({
         '@unocss/nuxt',
         '@nuxt/icon',
     ],
+
+    icon: {
+        mode: 'svg',
+    },
 })
