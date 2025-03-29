@@ -38,6 +38,19 @@ export default defineNuxtConfig({
         },
     },
 
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    api: 'modern-compiler',
+                },
+            },
+        },
+        server: {
+            allowedHosts: true,
+        },
+    },
+
     modules: [
         '@unocss/nuxt',
         '@nuxt/icon',

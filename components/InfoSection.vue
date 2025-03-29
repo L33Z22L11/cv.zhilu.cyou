@@ -8,7 +8,7 @@ defineProps<{
     <section>
         <h2
             m="bs-4 be-2"
-            b-b="2 solid gray-400/20"
+            b-b="2 solid gray-400/25"
             text="5"
         >
             {{ title }}
