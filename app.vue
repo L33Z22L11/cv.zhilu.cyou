@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { name, phone } = useRuntimeConfig().public
+const publicConfig = useRuntimeConfig().public
+
+const name = publicConfig.name || '**璐'
+const phone = publicConfig.phone || '133****9192'
 
 useSeoMeta({
     title: `${name} - 前端开发实习`,
@@ -11,12 +14,12 @@ useSeoMeta({
 <template>
     <article max-w="176" mx="auto" p="4" text="3.5" tracking="wide">
         <h1 text="center" m="be-2">
-            {{ name || '刘' }}
+            {{ name }}
         </h1>
 
         <ul columns="sm:2" p="is-0">
             <InfoLi icon="ri:smartphone-line" label="电话">
-                {{ phone || '133****9192' }} (同微信)
+                {{ phone }} (同微信)
             </InfoLi>
 
             <InfoLi icon="ri:mail-line" label="邮箱">

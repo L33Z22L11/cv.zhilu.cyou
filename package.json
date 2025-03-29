@@ -1,6 +1,6 @@
 {
   "name": "zhilu-cv",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,18 +12,18 @@
   },
   "dependencies": {
     "@nuxt/icon": "1.11.0",
-    "nuxt": "^3.16.0",
+    "nuxt": "~3.13.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.10.0",
+    "@antfu/eslint-config": "^4.11.0",
     "@iconify-json/logos": "^1.2.4",
     "@iconify-json/ri": "^1.2.5",
     "@unocss/nuxt": "^66.0.0",
     "@zinkawaii/stylelint-config": "^0.3.0",
-    "eslint": "^9.22.0",
-    "sass": "^1.85.1",
+    "eslint": "^9.23.0",
+    "sass": "^1.86.0",
     "unocss": "^66.0.0"
   },
   "pnpm": {
